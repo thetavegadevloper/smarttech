@@ -255,7 +255,7 @@ function Home() {
           and inverter manufacturers, we ensure our clients receive the highest quality service from
           concept to commissioning and beyond.
         </p>
-        <p style={{fontSize: '1.4rem'}}>
+        <p style={{fontSize: '1.4rem', textAlign: 'justify'}}>
           As a leading provider of Solar Energy solutions, we are dedicated to helping homeowners and
           businesses harness the suns abundant energy to reduce their carbon footprint and save on
           energy costs.
