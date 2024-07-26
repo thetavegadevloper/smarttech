@@ -858,7 +858,7 @@ function Home() {
       </div>
       {/* <!-- Footer End --> */}
       <div className="text-center  mb-3 mb-md-0 text-white" style={{ backgroundColor: '#f28d35', height: '2rem', alignItems: 'center'}}>
-                &copy; <Link to="#">@Smart Tech Solutions</Link>
+               <p style={{fontWeight: 'bold'}}>Smart Tech Solutions</p>
               </div>
 
       {/* <!-- Back to Top --> */}
