@@ -1,0 +1,37 @@
+.custom-services-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.custom-service-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.custom-service-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.custom-service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-service-description {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}

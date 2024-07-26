@@ -1,0 +1,15 @@
+nav{
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+   
+  align-items: center;
+  
+}
+nav ul li a {
+  color: black;
+}
+nav img{
+  height:  60px; 
+   
+}

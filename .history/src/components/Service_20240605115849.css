@@ -1,0 +1,52 @@
+.custom-services-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.custom-service-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.custom-service-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-service-image {
+  width: 100%;
+  height: 200px; /* adjust the height to your needs */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.custom-service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-service-points {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.custom-service-points li {
+  margin-bottom: 10px;
+}
+
+.custom-section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}

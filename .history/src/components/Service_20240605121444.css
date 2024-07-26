@@ -1,0 +1,50 @@
+.custom-service-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.custom-service-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.custom-service-text {
+  padding: 20px;
+}
+
+.custom-service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-service-points {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.custom-service-points li {
+  margin-bottom: 10px;
+}
+
+.custom-section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}

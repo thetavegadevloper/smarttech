@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px; /* Add space between heading and image */
+}
+.testimonial-image {
+  text-align: center;
+  margin-bottom: 20px; /* Add space between image and cards */
+}
+.testimonial-cards {
+  padding-top: 20px; /* Add space above cards */
+}
+.card {
+  margin-bottom: 30px; /* Add space between cards */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-img-top {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: -50px; /* Adjust position */
+}
+.card-body {
+  padding: 30px; /* Increase padding */
+}
+/* header start  */
+.custom-container {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.custom-container img {
+  width: 100%;
+  height: auto; /* Adjusted height to maintain aspect ratio */
+  display: block;
+}
+
+.custom-tagline {
+  position: absolute;
+  top: 50%;
+  left: 50px; /* Margin added from the left side */
+  transform: translateY(-50%);
+  font-size: 40px; /* Reduced font size for better responsiveness */
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Reduced height of the logo for better fit */
+}
+
+.pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pages li {
+  display: inline-block;
+  margin-left: 10px; /* Reduced margin between menu items */
+}
+
+.pages li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* Increased font size for better readability */
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-tagline {
+    font-size: 10px; /* Adjusted font size for smaller screens */
+    left: 20px; /* Reduced margin from the left for smaller screens */
+  }
+
+  .logo img {
+    height: 40px; /* Further reduced height of the logo for smaller screens */
+  }
+
+  .pages li {
+    margin-left: 5px; /* Further reduced margin between menu items for smaller screens */
+  }
+
+  .pages li a {
+    font-size: 12px; /* Further reduced font size for smaller screens */
+  }
+}

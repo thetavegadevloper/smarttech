@@ -1,0 +1,135 @@
+.about-us-section {
+  height: 600px; /* Increase the height */
+  width: 100%; /* Make it full width */
+  background-image: url('service1.jpg'); /* Set the background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-us-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align content */
+  text-align: center; /* Center align text */
+}
+
+.about-us-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* White text */
+}
+
+.about-us-description {
+  font-size: 24px; /* Increase the font size */
+  color: #fff; /* White text */
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.rounded-container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  
+}
+.rounded-container img {
+  width: 60%;
+   height: 210px;
+  border-radius : 360px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.card {
+  margin-bottom: 20px;
+}
+
+
+ /* header start  */
+ .custom-container {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.custom-container img {
+  width: 100%;
+  height: 600px ;
+  display: block;
+}
+
+.custom-tagline {
+  position: absolute;
+  top: 50%;
+  left: 50px; /* Margin added from the left side */
+  transform: translateY(-50%);
+  font-size: 70px; /* Increased font size */
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* width: 300px; */
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.3);   */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo img {
+  height: 70px; /* Adjust height of the logo */
+}
+
+.pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pages li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.pages li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.pages li a:hover {
+  color: #ccc; /* Change color on hover */
+}

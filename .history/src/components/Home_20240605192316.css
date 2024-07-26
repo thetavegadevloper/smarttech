@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Ensure video fits the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: green;
+  font-size: 15px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 4vw; /* Responsive font size */
+  color:white;
+  font-weight: 600;
+  transition: 0.5s;
+  
+  
+}
+
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+      padding: 0 10px;
+  }
+
+  nav {
+      padding: 20px 5%;
+  }
+
+  nav ul li {
+      margin-left: 20px;
+  }
+
+  .content h3 {
+      font-size: 6vw;
+  }
+
+  .content a {
+      padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul li {
+      margin-left: 10px;
+  }
+
+  .content h3 {
+      font-size: 8vw;
+  }
+
+  .content a {
+      padding: 8px 30px;
+  }
+}
+
+.content h3:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;  
+}
+
+/* navbar end  */
+/*headerstart*/
+ 
+
+
+/* service start  */
+ /* Your existing CSS styles */
+  .service-head{ 
+    height: 120px;
+    width: 50%;
+    /* border: 2px solid black ; */
+    border-radius: 30px ;
+    position: relative;
+    left: 330px;
+    bottom: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  }
+ .service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   
+}
+
+.service {
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .service:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+/* } */
+
+.service img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+ 
+.service h3 {
+  font-size: 1.5rem;
+  color: #333;
+  
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+ 
+ 
+/* Additional CSS for the heading */
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Additional CSS for animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+  
+/* service end  */
+/* calculator start  */
+ 
+/* calculator end  */
+/* faq start  */
+.faq-container {
+  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-container h2{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item label {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.faq-item label:hover {
+  background-color: #f5f5f5;
+}
+
+.faq-item input[type="checkbox"] {
+  display: none;
+}
+
+.faq-item input[type="checkbox"]:checked + label {
+  background-color: #f5f5f5;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-content {
+  max-height: 500px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* faq end  */
+
+
+/* footer start  */
+ footer img{
+  height: 120px;
+ }
+
+
+ /* projects start  */
+ 
+
+.project-container {
+  background-color: #fff;
+  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  height: 300px; /* adjust the height to your needs */
+  margin-top: 30px;
+  
+}
+ 
+
+.project-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+ 
+
+/* Animations */
+.project-container {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-container:nth-child(1) {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+.project-container:nth-child(2) {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+.project-container:nth-child(3) {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ 

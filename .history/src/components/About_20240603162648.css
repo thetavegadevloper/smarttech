@@ -1,0 +1,9 @@
+nav{
+  background-color: #fff;
+}
+nav ul li a {
+  color: black;
+}
+nav img{
+  height:  60px; 
+}
