@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import team1 from "../img/team-1.jpg";
 // import team2 from "../img/team-2.jpg";
 // import team3 from "../img/team-3.jpg";
-import project1 from "../img/project1.jpg";
-import qualitys from "../img/qualitys.jpg";
-import project3 from "../img/project3.jpg";
+import greenq from "../img/greenq.jpg";
+import quality1 from "../img/quality1.png";
+import customer from "../img/customer.jpg";
 // import sunrise from "../img/sunrise.jpg";
 // import solarpowerplant from "../img/solarpowerplant.jpg";
 import "../components/Home.css";
@@ -12,7 +12,8 @@ import Carousel from "react-bootstrap/Carousel";
 // import about1 from "../img/about1.jpg";
 import sunset from "../img/sunset.jpg";
 import logo from "../img/logo.png"; 
-import home1 from "../img/home1.jpg";
+// import home1 from "../img/home1.jpg";
+// import innovetive from "../img/innovetive.jpg";
 import project4 from "../img/project4.jpg";
 
 import service2 from "../img/SPP.avif";
@@ -41,7 +42,7 @@ function Home() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "5e17ba4e-ab19-4ecd-88c8-62d49b0db596");
+    formData.append("access_key", "90d68976-a66d-4e66-a3a6-aabdb2a9c0d6");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -200,17 +201,17 @@ function Home() {
             <h5 style={{ color: 'white', fontWeight: 'bolder'}}>Empowering your future with sustainable energy and smart automation.</h5>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img
             className="d-block w-100"
-            src={home1} // Replace with your image URL
+            src={innovetive} // Replace with your image URL
             alt="Second slide"
           />
           <Carousel.Caption className="caption-right caption-lg-left">
             <h1 style={{ color: 'white', fontWeight: 'bolder'}}>Innovative Technology Solutions</h1>
             <h5 style={{ color: 'white', fontWeight: 'bolder'}}>Leading the way in renewable energy.</h5>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> */}
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -222,17 +223,17 @@ function Home() {
             <h5 style={{ color: 'white', fontWeight: 'bolder'}}>Transforming homes and businesses with advanced automation.</h5>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img
-            className="d-block w-100"
-            src={home1} // Replace with your image URL
+            className="d-block w-100 h-70"
+            src={innovetive} // Replace with your image URL
             alt="Fourth slide"
           />
           <Carousel.Caption className="caption-right caption-lg-left">
             <h1 style={{ color: 'white', fontWeight: 'bolder'}}>Sustainable Energy</h1>
             <h5 style={{ color: 'white', fontWeight: 'bolder'}}>Harnessing the power of the sun for a greener tomorrow.</h5>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> */}
       </Carousel>
     </div>
 
@@ -247,7 +248,7 @@ function Home() {
         <h1 className="text-uppercase mb-4" style={{ color: '#f28d35'}}>ABOUT US</h1>
         </div>
         <h4 className="mb-3">Welcome to Smart Tech Solutions</h4>
-        <p style={{fontSize: '1.4rem', textAlign: 'justify'}}>
+        <p style={{fontSize: '1.2rem', textAlign: 'justify'}}>
           We are pioneers in providing state-of-the-art green energy solutions, specializing in both
           ON Grid and OFF Grid solar installations for domestic and industrial needs. Our mission is
           to drive sustainability by harnessing the power of the sun to deliver reliable and efficient
@@ -255,7 +256,7 @@ function Home() {
           and inverter manufacturers, we ensure our clients receive the highest quality service from
           concept to commissioning and beyond.
         </p>
-        <p style={{fontSize: '1.4rem', textAlign: 'justify'}}>
+        <p style={{fontSize: '1.2rem', textAlign: 'justify'}}>
           As a leading provider of Solar Energy solutions, we are dedicated to helping homeowners and
           businesses harness the suns abundant energy to reduce their carbon footprint and save on
           energy costs.
@@ -263,25 +264,25 @@ function Home() {
         </div>
         <div className="jadu">
         <div className="text-center">
-        <h4 className="mt-5 mb-3">At Smart Tech Solutions,</h4>
+        <h4 className="mt-5 mb-3">At Smart Tech Solutions</h4>
         <h5>We are Committed to</h5>
         </div>
         <div className="row mt-4">
           <div className="col-md-3 text-center shadow-lg" style={{ boxShadow: ''}}>
             <i className="bi bi-lightning-charge-fill display-4 mb-2" style={{ color: '#f28d35'}}></i>
-            <p>Reducing energy costs</p>
+            <p style={{fontSize: '1.2rem'}}>Reducing energy costs</p>
           </div>
           <div className="col-md-3 text-center shadow-lg">
             <i className="bi bi-globe2 display-4 mb-2" style={{ color: '#0dac12'}}></i>
-            <p>Promoting environmental sustainability</p>
+            <p style={{fontSize: '1.2rem'}}>Promoting environmental sustainability</p>
           </div>
           <div className="col-md-3 text-center shadow-lg">
             <i className="bi bi-battery-charging display-4 mb-2" style={{ color: '#f28d35'}}></i>
-            <p>Enhancing energy independence</p>
+            <p style={{fontSize: '1.2rem'}}>Enhancing energy independence</p>
           </div>
           <div className="col-md-3 text-center shadow-lg">
             <i className="bi bi-bar-chart-fill display-4 mb-2" style={{ color: '#f28d35'}}></i>
-            <p>Providing cutting-edge energy management and monitoring systems</p>
+            <p style={{fontSize: '1.2rem'}}>Providing cutting-edge energy management and monitoring systems</p>
           </div>
           </div>
         </div>
@@ -344,11 +345,11 @@ function Home() {
           <div className="row">
             <div className="col-md-4">
               <div className="card rounded-container ">
-                <img src={project1} className="card-img-top " alt="Image 1" />
+                <img src={greenq} className="card-img-top " alt="Image 1" />
                 <br />
                 <div className="card-body text-center">
                   <h5 className="card-title" style={{color: '#f28d35'}}>SUSTAINABILITY</h5>
-                  <p className="card-text">
+                  <p className="card-text" style={{fontSize: '1.2rem'}}>
                     {" "}
                     We Prioritize Eco-Friendly solutions for a greener future.
                   </p>
@@ -357,11 +358,11 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className="card rounded-container">
-                <img src={qualitys} className="card-img-top" alt="Image 2" />
+                <img src={quality1} className="card-img-top" alt="Image 2" />
                 <br />
                 <div className="card-body text-center">
                   <h5 className="card-title" style={{color: '#f28d35'}}>QUALITY</h5>
-                  <p className="card-text">
+                  <p className="card-text" style={{fontSize: '1.2rem'}}>
                     {" "}
                     Our Commitment to excellence ensures reliable and efficient
                     systems.
@@ -371,14 +372,14 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className="card rounded-container">
-                <img src={project3} className="card-img-top" alt="Image 3" />
+                <img src={customer} className="card-img-top" alt="Image 3" />
                 <br />
                 <div className="card-body text-center">
                   <h5 className="card-title" style={{color: '#f28d35'}}>
                     {" "}
                     CUSTOMER SATISFACTION
                   </h5>
-                  <p className="card-text">
+                  <p className="card-text" style={{fontSize: '1.2rem'}}>
                     {" "}
                     your Satisfaction is our priority, driving us to deliver
                     exceptional results
@@ -429,20 +430,20 @@ function Home() {
                   <div className="service-details" style={{ marginTop: '1rem'}}>
                     <FaSolarPanel className="service-icon" />
                     <h3>Rooftop Solar Solutions</h3>
-                    <p className="mb-4">
+                    <p className="mb-4" style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                       Tailored solutions for residential, commercial, and
                       industrial consumers.
                     </p>
                     <ul className="custom-service-points">
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Design and Installation: Tailored Solutions for
                         residential, commercial, and industrial consumers.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Business Models: Choose between OPEX (Operating Expense)
                         and Capex (Capital Expense) Models.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Benefits: Cost savings, energy independence, and
                         environmental impact.
                       </li>
@@ -465,19 +466,19 @@ function Home() {
                   <div className="service-details">
                     <FaSolarPanel className="service-icon" />
                     <h3>Solar Power Plants</h3>
-                    <p className="mb-4">
+                    <p className="mb-4" style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                       Comprehensive solutions for solar power generation.
                     </p>
                     <ul className="custom-service-points">
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Design and Installation: Comprehensive solutions for
                         solar power generation.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Operation and Maintenance: Ensuring optimal performance
                         and longevity.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Case Studies/Testimonials: Showcase successful projects
                         and satisfied clients.
                       </li>
@@ -500,20 +501,20 @@ function Home() {
                   <div className="service-details">
                     <TbHomeCog className="service-icon" />
                     <h3>Smart Luxury Home Automation</h3>
-                    <p className="mb-4">
+                    <p className="mb-4" style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                       Control lighting, temperature, security, and entertainment
                       systems seamlessly.
                     </p>
                     <ul className="custom-service-points">
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Features: Control lighting, temperature, security, and
                         entertainment systems seamlessly.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Integration: Customizable solutions to fit your
                         lifestyle and preferences.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Benefits: Convenience, energy efficiency, and enhanced
                         living experience.
                       </li>
@@ -536,19 +537,19 @@ function Home() {
                   <div className="service-details">
                     <GiTheater className="service-icon" />
                     <h3>Home Theatres</h3>
-                    <p className="mb-4">
+                    <p className="mb-4" style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                       Immerse yourself in superior audiovisual experiences.
                     </p>
                     <ul className="custom-service-points">
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Audio and Video Controls: Immerse yourself in superior
                         audiovisual experiences.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Customization: Design your dream home theatre with our
                         expert guidance.
                       </li>
-                      <li>
+                      <li style={{textAlign: 'justify', fontSize: '1.2rem'}}>
                         Quality: High-quality equipment and intuitive controls
                         for an immersive entertainment experience.
                       </li>
@@ -571,7 +572,7 @@ function Home() {
         {/* Right Column: Text and Icons */}
         <div className="col-lg-6" style={{ padding: '2rem'}}>
           <h2>Why Choose Us!</h2>
-          <p className="mt-5">
+          <p className="mt-5" style={{ textAlign: 'justify', fontSize: '1.2rem' }}>
             Whether you’re looking to reduce your carbon footprint, lower
             energy costs, or gain energy independence, we have the expertise
             to deliver tailored solar solutions that meet your needs.
@@ -656,7 +657,7 @@ function Home() {
                 ></iframe>
               </div>
             </div>
-            <div className="col-md-6 rounded" style={{ backgroundColor: '#f28d35' }}>
+            <div className="col-md-6 rounded" style={{ backgroundColor: '#f28d35', marginTop: '1rem' }}>
               <div className="quote-form text-dark p-4 rounded" style={{ backgroundColor: '#f28d35' }}>
                 <h2 className="mb-4 text-white" style={{ fontWeight: 'bold'}}>Get A Quote</h2>
                 <form id="quoteForm" method="POST" onSubmit={onSubmit} style={{ backgroundColor: '#f28d35' }}>
@@ -719,7 +720,7 @@ function Home() {
                       rows="3"
                     ></textarea>
                   </div>
-                  <button type="submit" className="btn" style={{ fontWeight: 'bold', backgroundColor: '#0dac12'}}>
+                  <button type="submit" className="btn text-white" style={{ fontWeight: 'bold', backgroundColor: '#0dac12'}}>
                     Submit
                   </button>
                 </form>
@@ -858,7 +859,7 @@ function Home() {
       </div>
       {/* <!-- Footer End --> */}
       <div className="text-center  mb-3 mb-md-0 text-white" style={{ backgroundColor: '#f28d35', height: '2rem', alignItems: 'center'}}>
-               <p style={{fontWeight: 'bold'}}>Smart Tech Solutions</p>
+      <p style={{fontWeight: 'bold'}}>&copy; Smart Tech Solutions</p>
               </div>
 
       {/* <!-- Back to Top --> */}
