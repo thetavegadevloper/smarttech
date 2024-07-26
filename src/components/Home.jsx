@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import team2 from "../img/team-2.jpg";
 // import team3 from "../img/team-3.jpg";
 import project1 from "../img/project1.jpg";
-import quality from "../img/quality.jpg";
+import qualitys from "../img/qualitys.jpg";
 import project3 from "../img/project3.jpg";
 // import sunrise from "../img/sunrise.jpg";
 // import solarpowerplant from "../img/solarpowerplant.jpg";
@@ -357,7 +357,7 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className="card rounded-container">
-                <img src={quality} className="card-img-top" alt="Image 2" />
+                <img src={qualitys} className="card-img-top" alt="Image 2" />
                 <br />
                 <div className="card-body text-center">
                   <h5 className="card-title" style={{color: '#f28d35'}}>QUALITY</h5>
